@@ -1,0 +1,87 @@
+@import "../../_globalColor";
+
+.skills-main-div {
+  margin: 0 auto;
+  max-width: 1300px;
+  overflow: hidden;
+}
+
+.skills-heading {
+  font-family: BacilusGrotesque;
+  font-size: 45px;
+  font-weight: 900;
+  margin-bottom: 50px; 
+}
+
+.skill-card {
+  background: var(--card-color);
+  border-radius: 25px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); 
+  }
+  &:hover .skills-line {
+    width: 99%; // Asumiendo que quieres la línea un poco más corta que el contenedor
+  }
+}
+
+.light-mode .skill-card:hover {
+  background-color: darken(white, 5%);
+}
+
+.dark-mode .skill-card:hover {
+  background-color: lighten(black, 5%); 
+}
+
+.skills-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .skills-heading {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .skills-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+  .greeting-text-p {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .skills-main-div {
+    flex-direction: column;
+  }
+  .skills-text-div {
+    margin-left: 0px;
+    margin: 20px;
+  }
+  .skills-text {
+    font-size: 16px;
+  }
+  .skills-text-subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+  .skills-image-div {
+    /* display: none; */
+    order: 2;
+  }
+}

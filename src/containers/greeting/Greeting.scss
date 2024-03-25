@@ -1,0 +1,122 @@
+@import "../../_globalColor";
+
+.main {
+  width: 80%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 4rem;
+}
+.greet-main {
+  width: 80%;
+  max-width: 1300px;
+  padding: 20px 10px;
+  margin: 0px auto;
+}
+
+.greeting-main {
+  display: flex;
+  margin-top: 200px;
+}
+
+.subTitle {
+  color: $subTitle !important;
+}
+
+.greeting-main {
+  display: flex;
+}
+
+.greeting-main > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+.button-greeting-div {
+  display: flex;
+  margin-top: 20px;
+}
+
+.greeting-text {
+  font-size: 30px;
+  line-height: 1.1;
+  color: $textColor !important;
+}
+
+.greeting-name {
+  font-size: 125px;
+  line-height: 0;
+  color: $buttonColor;
+font-family: "BacilusGrotesque";
+}
+
+.dark-mode .greeting-name {
+  color: $buttonColor !important; // Define esto en tus variables SCSS para el tema oscuro
+}
+
+.greeting-text-p {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.greeting-image-div {
+  display: flex;
+  justify-content: center; 
+  align-items: center;                
+}
+
+.greeting-image-div > img {
+  max-width: 80%;
+  border-radius: 50%;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .greeting-text {
+    font-size: 30px;
+  }
+  .greeting-text-p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .button-greeting-div {
+    justify-content: space-around;
+  }
+  .greeting-text {
+    font-size: 30px;
+    text-align: center;
+  }
+  .greeting-name {
+    font-size: 90px;
+    text-align: center;
+  }
+  .greeting-text-p {
+    font-size: 15px;
+    line-height: normal;
+    text-align: center;
+  }
+  .greeting-main {
+    display: block;
+  }
+  .greeting-image-div > img {
+    max-width: 50%;
+    border-radius: 50%;
+  }
+  .greeting-image-div {
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .greeting-name {
+    font-size: 60px;
+    text-align: center;
+  }
+  .greeting-text {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 320px) {
+  .main {
+    width: auto;
+  }
+}

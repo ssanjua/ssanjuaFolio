@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "MartianMono";
+  font-style: normal;
+  font-weight: normal;
+  src: local("MartianMono_SemiCondensed-Medium"),
+    url("./assets/fonts/MartianMono-VariableFont.ttf") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "BacilusGrotesque";
+  src: local("BacilusGrotesque"),
+    url("./assets/fonts/BacilusGrotesque-ExtraBold.otf") format("woff");
+  font-display: swap;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0 auto;
+  font: 15px / 20px MartianMono, "MartianMono", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  html,
+  body {
+    font-size: rem;
+    line-height: normal;
+  }
+}

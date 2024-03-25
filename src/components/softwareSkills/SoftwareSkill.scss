@@ -1,0 +1,48 @@
+@import "../../_globalColor";
+
+.dev-icons {
+  list-style: none;
+  font-size: 3rem;
+  margin: 0 auto;
+  transition: color 0.2s ease-in-out;
+
+}
+
+.dev-icons li i:hover {
+  color: $buttonColor;
+}
+
+.software-skill-inline {
+  display: inline-block;
+  margin-right: 25px;
+  margin-bottom: 10px;   
+}
+
+.software-skill-inline > i {
+  color: $subTitle;
+}
+
+.software-skill-inline > i:hover {
+  color: $skillsColor;
+  
+}
+.software-skill-inline > p {
+  color: $subTitle;
+  font-size: 10px;
+}
+
+.software-skill-inline > i:hover ~ p {
+  color: $skillsColor;
+}
+
+.skills-line {
+  height: 2px;
+  background: $blogCardContainerColor; 
+  width: 75%; 
+  margin-left: 10px;
+  margin-bottom: 10px;
+  transition: width 0.6s ease-in-out;
+  -webkit-transition: width 0.6s ease-in-out;
+  -moz-transition: width 0.6s ease-in-out;
+  -o-transition: width 0.6s ease-in-out;
+}

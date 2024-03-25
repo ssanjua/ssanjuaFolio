@@ -1,0 +1,76 @@
+.education-heading {
+  font-family: BacilusGrotesque;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.education-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 1300px;
+  width: 80%;
+  padding: 20px 0px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+
+.education-section > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.education-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px; /* This is the space between the cards */
+  padding-top: 20px;
+}
+
+.education-button {
+  color: black;
+}
+
+.button-certificado .main-button {
+  font-size: 12px; 
+  margin-right: 20px;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 20px;
+  display: inline-flex;
+  font-size: 0.75rem;
+  height: 2em;
+  justify-content: center;
+  white-space: nowrap;
+  line-height: 1.5;
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 0.5em 1.5em;
+  transition: 0.2s ease-in;
+}
+
+@media (max-width: 1380px) {
+  .education-card-container {
+    padding-top: 0px;
+  }
+  .education-heading {
+    font-size: 40px;
+  }
+  .education-text-subtitle {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-card-container {
+    padding-top: 0px;
+    grid-template-columns: 1fr;
+  }
+  .education-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+  .education-text-subtitle {
+    font-size: 16px;
+  }
+  
+}
